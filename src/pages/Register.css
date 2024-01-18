@@ -1,0 +1,37 @@
+/* Register.css */
+
+.register-container {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .register-heading {
+    color: #3498db; /* Example color */
+  }
+  
+  .register-input {
+    border: 1px solid #ccc; /* Example border style */
+    border-radius: 5px; /* Example border radius */
+    padding: 8px;
+  }
+  
+  .register-button {
+    background-color: #27ae60; /* Example background color */
+    color: #fff; /* Example text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .register-button:hover {
+    background-color: #219e49; /* Example hover background color */
+  }
+  
+  .register-alert {
+    margin-top: 10px;
+    background-color: #e74c3c; /* Example alert background color */
+    color: #fff; /* Example alert text color */
+  }
+  

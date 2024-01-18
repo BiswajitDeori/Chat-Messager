@@ -1,0 +1,391 @@
+/* NavBar.css */
+
+.navbar {
+  background-color: #333; /* Background color for the navbar */
+  padding: 10px; /* Add some padding to the navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.9rem; /* Adjust the font size of the logo */
+  font-weight: 600;
+  color: white; /* Text color for the logo */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 23px; /* Add some space between the navigation links */
+}
+
+.nav-links li {
+  font-size: 1.5rem; /* Adjust the font size of the navigation links */
+  font-weight: 500;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white; /* Text color for the links */
+  transition: color 0.3s ease; /* Add a smooth transition for the color change */
+}
+
+.nav-links a:hover {
+  color: #61dafb; /* Change color on hover */
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #f4f4f4; /* Change the background color */
+}
+
+/* All users */
+.all-users {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.single-user {
+  background: #2c7915; /* Change the background color */
+  color: white;
+  cursor: pointer;
+  padding: 5px 7px;
+  border-radius: 10px;
+  margin-right: 0.5rem;
+  position: relative;
+  margin-top:15px;
+}
+
+/* User Card */
+.user-card {
+  color: #333; /* Change the text color */
+  position: relative;
+  border-bottom: 1px solid #ccc; /* Change the border color */
+  width: 380px;
+}
+
+.user-card .text-content {
+  width: 170px;
+}
+
+.user-card .name {
+  color: #1e554b;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.user-card .text,
+.user-card .date {
+  font-size: 14px;
+  color: #666; /* Change the text color */
+}
+
+.user-online {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #28a745; /* Change the background color */
+  position: absolute;
+  top: -31px;
+  right: -3px;
+  z-index: 2;
+}
+
+.single-online {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #28a745; /* Change the background color */
+  position: absolute;
+  top: -5px;
+  right: -3px;
+  z-index: 2;
+}
+
+
+
+/* Chat Box */
+.chat-box {
+  min-height: 60vh;
+  max-height: calc(90vh - 10rem);
+  overflow-y: auto;
+  background: #89cfe0; /* Change the background color */
+  border-radius: 10px;
+}
+
+
+
+/* Chat Header */
+.chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  color: #c3f0fc; /* Change the text color */
+  background: #2c2c2c; /* Change the background color */
+}
+
+/* Messages */
+.messages {
+  max-height: calc(100vh - 15rem);
+  overflow-y: auto;
+  padding: 0 2rem;
+  max-width: 99%;
+  overflow-x: hidden;
+}
+.react-emoji
+{
+  width: 91% !important;
+}
+.message {
+  color: #0f0f0f; /* Change the text color */
+  background: #282c34; /* Change the background color */
+  padding: 0.75rem;
+  border-radius: 5px;
+  max-width: 50%;
+}
+
+.message.self {
+  color: #fff; /* Change the text color */
+  background: #007bff; /* Change the background color */
+}
+
+.message-footer {
+  font-size: 12px;
+  align-self: flex-end;
+  font-weight: 400;
+}
+
+/* Chat Input  */
+.chat-input {
+  width: 100%;
+  background: #2c2c2c; /* Change the background color */
+  padding: 1rem;
+}
+
+.send-btn {
+  border: none;
+  background: #007bff; /* Change the background color */
+  color: #fff; /* Change the text color */
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+/* Notification */
+.notifications {
+  position: relative;
+  background-color: #1e554b;
+}
+
+.notifications-icon {
+  color: #333; /* Change the text color */
+  cursor: pointer;
+  position: relative;
+  margin-right: 1rem;
+}
+
+.notifications-box {
+  max-height: 50vh;
+  width: 300px;
+  position: absolute;
+  top: 4rem;
+  right: 144px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background: #20c997;
+  color: #f9fffe; /* Change the text color */
+  z-index: 5;
+  border-radius: 17px;
+}
+
+.notifications-header {
+  padding: 1rem;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.notifications-box h3 {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.mark-as-read {
+  cursor: pointer;
+  font-weight: 700;
+  opacity: 0.8;
+  font-size: 19px;
+  color: white;
+}
+
+span
+{
+  color:black;
+}
+
+.notification {
+  font-size: 14px;
+  margin: 1rem 0;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid #0c0c0c; /* Change the border color */
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  background: #a8acadd1;
+}
+
+.notification.not-read {
+  background: #2092c9d1;
+  border-radius: 15px;
+  color: white;
+}
+
+.notification-time {
+  margin-top: 0.2rem;
+  font-size: 12px;
+  color: #0c0c0c;
+}
+
+.notification-count {
+  display: flex;
+  background: #c9e1dd;
+  height: 25px;
+  width: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 15px;
+  right: 156px;
+}
+
+
+.this-user-notifications {
+  display: flex;
+  position: absolute;
+  background: #00bd9b;
+  height: 20px;
+  width: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+******
+
+/* Add this to your CSS file or style component */
+
+/* Chat Box */
+.chat-box {
+  max-height: calc(80vh - 10rem);
+  overflow-y: auto;
+  background: #f0f8ff; /* Light blue background */
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 60%;
+}
+
+/* Chat Header */
+.chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  color: #fff;
+  background: #2196F3; /* Blue header background */
+  border-radius: 10px 10px 0 0;
+}
+
+/* Messages */
+.messages {
+  max-height: calc(100vh - 15rem);
+  overflow-y: auto;
+  padding: 0 1rem;
+}
+
+/* Message */
+.message {
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 70%;
+}
+
+.message.self {
+  background: #007bff; /* Self message background color */
+  color: #fff;
+  align-self: flex-end;
+}
+
+.message:not(.self) {
+  background: #e3f2fd; /* Other messages background color */
+}
+
+/* Message Text and Timestamp */
+.message span {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Scrollbar */
+.chat-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+  background-color: #2196F3; /* Scrollbar color */
+  border-radius: 5px;
+}
+
+/* Hover Effect */
+.message:hover {
+  background: #d2e3fc; /* Light blue background on hover */
+}
+
+
+
+/* Timestamp Style */
+.message-timestamp {
+  font-size: 12px;
+  color: #888; /* Light gray color for the timestamp */
+  margin-top: 2px;
+}
+
+/* ... other styles ... */
+
+/* Message Text and Timestamp */
+.message span {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Hover Effect */
+.message:hover {
+  background: #d2e3fc; /* Light blue background on hover */
+}
+.message-box {
+  overflow-y: auto;
+  max-height: calc(90vh - 10rem);
+}
+
+.multiline-input {
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.multiline-input input {
+  width: 100%;
+}
