@@ -25,7 +25,7 @@ export const ChatContextProvider = ({ children, user }) => {
   console.log("getting the notification",notification);
   useEffect(()=>
   {
-    const newSocket = io("http://localhost:4000")
+    const newSocket = io("https://chat-socket-gx0c.onrender.com")
     setSocket(newSocket);
 
     console.log("connection to socket",newSocket);
