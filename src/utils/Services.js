@@ -1,4 +1,4 @@
-export const url = "http://localhost:5000/api"
+export const url = "https://chat-server-a3ex.onrender.com/api"
 
 export const postRequest = async(url,body) =>
 {
